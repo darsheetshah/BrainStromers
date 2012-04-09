@@ -1,0 +1,1 @@
+This is a Ruby on Rails application of a community whose main ojectives are to facilitate charity and discussion forum.
