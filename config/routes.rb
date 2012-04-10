@@ -1,4 +1,29 @@
 BrainStromers::Application.routes.draw do
+  get "reach_out/Login"
+
+  get "reach_out/Home"
+
+  get "reach_out/Charity"
+
+  get "reach_out/DiscussionThread"
+
+  get "reach_out/About"
+#  get "reac_out/Login"
+
+#  get "reac_out/Home"
+
+# get "reac_out/Charity"
+
+#  get "reac_out/DiscussionThread"
+
+#  get "pages/Login"
+
+#  get "pages/Home"
+
+#  get "pages/Charity"
+
+#  get "pages/DiscussionThread"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
