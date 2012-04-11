@@ -1,4 +1,6 @@
 BrainStromers::Application.routes.draw do
+  get "users/new"
+root to: 'reach_out#Home'
   match 'reach_out/Login', :to => 'reach_out#Login'
   
   
@@ -10,6 +12,8 @@ BrainStromers::Application.routes.draw do
   get "reach_out/Charity"
 
   get "reach_out/DiscussionThread"
+  
+  get "reach_out/SignUp"
 
 #  get "reach_out/About"
 #  get "reac_out/Login"
