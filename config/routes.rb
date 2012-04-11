@@ -1,5 +1,9 @@
 BrainStromers::Application.routes.draw do
-  get "reach_out/Login"
+  match 'reach_out/Login', :to => 'reach_out#Login'
+  
+  
+  
+#  get "reach_out/Login"
 
   get "reach_out/Home"
 
@@ -7,7 +11,7 @@ BrainStromers::Application.routes.draw do
 
   get "reach_out/DiscussionThread"
 
-  get "reach_out/About"
+#  get "reach_out/About"
 #  get "reac_out/Login"
 
 #  get "reac_out/Home"

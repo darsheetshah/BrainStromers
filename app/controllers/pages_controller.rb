@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+	
   def Login
 	@title = "Login"
   end
