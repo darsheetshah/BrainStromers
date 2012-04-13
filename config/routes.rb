@@ -1,19 +1,28 @@
 BrainStromers::Application.routes.draw do
-  get "users/new"
-root to: 'reach_out#Home'
-  match 'reach_out/Login', :to => 'reach_out#Login'
+  get "reach_out/index"
+
+  resources :users
+match '/Login', to: 'reach_out#Login'
+match '/', to: 'reach_out#Home'
+match '/Charity', to: 'reach_out#Charity'
+match '/DiscussionThread', to: 'reach_out#DiscussionThread'
+match '/SignUp', to: 'users#new'
+   # get "users/new"
+root :to=> 'reach_out#Home'
   
+  match '/create', to: 'users#create'
   
+	#match 'reach_out/SignUp', :to => 'users#new'
   
 #  get "reach_out/Login"
 
-  get "reach_out/Home"
+  #get "reach_out/Home"
 
-  get "reach_out/Charity"
+#  get "reach_out/Charity"
 
-  get "reach_out/DiscussionThread"
+ # get "reach_out/DiscussionThread"
   
-  get "reach_out/SignUp"
+ # get "reach_out/SignUp"
 
 #  get "reach_out/About"
 #  get "reac_out/Login"
