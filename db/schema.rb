@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20120412205554) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
     t.string   "password"
-    t.string   "confirm_passwrod"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

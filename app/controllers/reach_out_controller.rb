@@ -24,6 +24,8 @@ class ReachOutController < ApplicationController
   @title = "SignUp"
   end
   
-  login_path = '/Login'
+  def index
+  @title = "Welcome"
+  end
  
 end

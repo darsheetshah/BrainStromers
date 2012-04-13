@@ -1,15 +1,15 @@
 BrainStromers::Application.routes.draw do
-  get "reach_out/index"
+#  get "reach_out/index"
 
   resources :users
 match '/Login', to: 'reach_out#Login'
-match '/', to: 'reach_out#Home'
+match '/Home', to: 'reach_out#Home'
 match '/Charity', to: 'reach_out#Charity'
 match '/DiscussionThread', to: 'reach_out#DiscussionThread'
 match '/SignUp', to: 'users#new'
    # get "users/new"
-root :to=> 'reach_out#Home'
-  
+#root :to=> 'reach_out#Home'
+ root :to => 'reach_out#index' 
   match '/create', to: 'users#create'
   
 	#match 'reach_out/SignUp', :to => 'users#new'
@@ -25,21 +25,6 @@ root :to=> 'reach_out#Home'
  # get "reach_out/SignUp"
 
 #  get "reach_out/About"
-#  get "reac_out/Login"
-
-#  get "reac_out/Home"
-
-# get "reac_out/Charity"
-
-#  get "reac_out/DiscussionThread"
-
-#  get "pages/Login"
-
-#  get "pages/Home"
-
-#  get "pages/Charity"
-
-#  get "pages/DiscussionThread"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
