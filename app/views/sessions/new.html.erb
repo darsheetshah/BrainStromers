@@ -1,0 +1,13 @@
+<h1>ReachOut#Login</h1>
+<p>Find me in app/views/sessions/Login.html.erb</p>
+<p> login to reach out community </p>
+<%= form_for(:session, url: sessions_path) do |f| %>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<%= f.label "Password of the user" %>
+<%= f.password_field :password %>
+<%= f.submit "Sign in" %>
+<%= @person %>
+<% end %> 
+
+

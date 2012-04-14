@@ -1,7 +1,6 @@
 class ReachOutController < ApplicationController
   def Login
   @title = "Login"
-  @login_path = "/Login"
   end
 
   def Home

@@ -10,7 +10,11 @@ class UsersController < ApplicationController
   
   def create
 	@user= User.new(params[:user])
-	@user.save 
-		redirect_to :action => 'new'
+	if	@user.save 
+		redirect_to @user
+		else
+		render 'new'
+		#redirect_to :action => 'new'
 		end
 	end
+end

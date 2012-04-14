@@ -6,4 +6,10 @@ class User < ActiveRecord::Base
   validates :email, presence: true, format: { with: Valid_email_regex}, uniqueness: {case_sensitive: false}
   validates :password, presence: true, confirmation: true, length: { within: 6..20 }
   
+  def authenticate(email, password)
+  user=User.find_by_email(email)
+  return user if user[:password]==password
+  end
+  
+  
 end
