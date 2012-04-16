@@ -25,7 +25,11 @@
 <nav>
 <ul class="nav pull-right">
 <li> <%= link_to "Home", "/Home" %></li>
+<% if signed_in? %>
+<li> <%= link_to "SignOut", "/SignOut", method:"delete" %> </li>
+<% else %>
 <li> <%= link_to "Login", "/SignIn" %></li>
+<% end %>
 <li> <%= link_to "Charity", "/Charity" %></li>
 <li> <%= link_to "Discussion Board", "/DiscussionThread" %></li>
 

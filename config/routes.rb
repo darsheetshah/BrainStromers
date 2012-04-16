@@ -12,10 +12,10 @@ match '/DiscussionThread', to: 'reach_out#Charity'
 match '/SignUp', to: 'users#new'
 match '/create', to: 'users#create'
 match '/About', to: 'reach_out#About'
-#match '/SignOut', to: 'sessions#destroy'
+match '/SignOut', to: 'sessions#destroy', via: :delete
 #match '/SignIn', to: 'sessions#new' 
 
-#via: :delete
+
 
 # get "users/new"
 #root :to=> 'reach_out#Home'
